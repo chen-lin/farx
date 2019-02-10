@@ -8,11 +8,11 @@
 % .........................................................................
 %  Author: L. Chen, Research Fellow, Trinity College Dublin, Dublin 2
 %  Email: l.chen.tj@gmail.com, or chenl1@tcd.ie
-%  Date: 01-03-2016
-%  Latest Revision: 06-04-2016
+%  Date: Mar 1, 2016
+%  Latest Revision: Feb 10, 2019
 % -------------------------------------------------------------------------
 clear; clc
-load Qf.mat; load Qh.mat; load Ta.mat; load Tz.mat;
+load data/Qf.mat; load data/Qh.mat; load data/Ta.mat; load data/Tz.mat;
 t = 0:length(Ta)-1;
 day = t/240;
 strt = 240*120;
@@ -75,4 +75,5 @@ plot(dtr, err_farx, 'b')
 hold off
 box on
 ylim([-2 2])
-display([fit_arx mae_arx mse_arx maxae_arx; fit_farx mae_farx mse_farx maxae_farx])
+display([fit_arx mae_arx mse_arx maxae_arx; fit_farx mae_farx mse_farx ...
+    maxae_farx])
