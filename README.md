@@ -1,7 +1,9 @@
 Fractional-order AutoRegressive model with eXogenous variables for building thermodynamics
 
-### Description
-The code we used in this [paper](https://www.sciencedirect.com/science/article/pii/S0378778816308064).
+### How to use
+Download and unzip farx and set _farx_ as the work folder in Matlab. Run farxid.m to identify a FARX model from the data in the _data_ folder and compare the performances of FARX and conventional ARX models. The data has been generated using a detailed model for building thermodynamics simulation.
+
+Refer to reference [1] for the algorithm and the data description.
 
 ### Citation
 Please cite [1] if you use farx for your own work.
